@@ -42,15 +42,15 @@ setTimeout(()=>{
 
 
 
-/*$(document).ready(function(){
+$(document).ready(function(){
   $('#menu').click(function()
   {
-      $(this).toggleclass('fa-times');
-      $(header).toggleclass('toggle');
+      $(this).toggleClass('fa-times');
+      $('header').toggleClass('toggle');
   });
   $(window).on('scroll load',function()
   {
-    $('#menu').removeclass('fa-times');
-    $(header).removeclass('toggle');
+    $('#menu').removeClass('fa-times');
+    $('header').removeClass('toggle');
   })
-});*/
+});

@@ -183,11 +183,10 @@ header .navbar ul li a:hover {
     flex-flow: row;
     border:  #448ee4;
 }
-.home .box .codechef {
-    padding-right: 4rem;
+.about .counter .box .codechef {
     height: 48px;
 }
-.home .box .codechef:hover {
+.about .counter .box .codechef:hover {
     height: 60px;
 }
 .home .box .codeforces {
@@ -196,10 +195,10 @@ header .navbar ul li a:hover {
 .home .box .codeforces:hover {
     height: 70px;
 }
-.home .box .gfg {
-    padding-right: 4rem;
+.about .counter .box  .gfg {
+    height: 48px;
 }
-.home .box .gfg:hover {
+.about .counter .box  .gfg:hover {
     height: 70px;
 }
 .home .box .github {
@@ -208,11 +207,10 @@ header .navbar ul li a:hover {
 .home .box i:hover {
     height: 70px;
 }
-.home .box .hackerrank {
-    padding-left: 4rem;
+.about .counter .box  .hackerrank {
     height: 48px;
 }
-.home .box .hackerrank:hover {
+.about .counter .box  .hackerrank:hover {
     height: 70px;
 }
 .home h1 {
@@ -566,6 +564,7 @@ header .navbar ul li a:hover {
     .about .row .counter .box {
         width: 90%;
     }
+
     .education .box-container .box{
         width: 100%;
     }

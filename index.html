@@ -6,6 +6,8 @@
     <title>my portfolio</title>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+     <!-- jQuery cdn-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -29,7 +31,7 @@
             </ul>
         </nav>
     </header>
-    <div id="menu" class="fas fa-bars"></div>
+    <div id="menu" class="fas fa-bars active"></div>
     <section class="home" id="home">
         <h3>HI <span class="wave" style="font-size: 4rem;">&#128075</span> THERE!</h3>
         <h1>I'M <span>HANNY</span></h1>
@@ -40,12 +42,8 @@
             <button class="btn">about me <i class="fas fa-user"></i></button>
         </a>
          <div class="box">
-           <a href="https://www.codechef.com/users/jangra2309" ><img src="pictures/codechef-icon.png" alt="" class="codechef"></a>
-           <a href="https://codeforces.com/profile/hanny_2309"><img src="pictures/codeforces-logo.png" alt="" class="codeforces"></a>
-           <a href="https://auth.geeksforgeeks.org/user/jangrahoney2309/practice/"><img src="pictures/gfg.png" alt="" class="gfg"></a>
            <a href="https://github.com/honeyjangra2309" class="github"><i class="fab fa-github" style="font-size: 48px;"></i></a>
            <a href="https://www.linkedin.com/in/hanny-jangra-6679311b5/"><i class="fab fa-linkedIn" style="font-size: 48px;"></i></a>
-           <a href="https://www.hackerrank.com/jangrahoney2309"><img src="pictures/hackerrank-icon.png" alt="" class="hackerrank"></a>
          </div>
     </section>
     <section class="about" id="about">
@@ -60,7 +58,8 @@
             <div class="counter">
                 <div class="box">
                     <span>130+</span>
-                    <h3>questions solved on gfg</h3>
+                    <h3 >questions solved on gfg</h3>
+                    <a href="https://auth.geeksforgeeks.org/user/jangrahoney2309/practice/"><img src="pictures/gfg.png" alt="" class="gfg"></a>
                 </div>
                 <div class="box">
                     <span><i class="fas fa-3x fa-star" style="font-size: 25px;"></i>
@@ -68,6 +67,7 @@
                         <i class="fas fa-3x fa-star" style="font-size: 25px;"></i>
                     </span>
                     <h3> on codechef</h3>
+                    <a href="https://www.codechef.com/users/jangra2309" ><img src="pictures/codechef-icon.png" alt="" class="codechef"></a>
                 </div>
                 <div class="box">
                     <span><i class="fas fa-star" style="font-size: 25px;"></i>
@@ -76,6 +76,7 @@
                         <i class="fas fa-3x fa-star" style="font-size: 25px;"></i>
                     </span>
                     <h3> on hackerRank</h3>
+                    <a href="https://www.hackerrank.com/jangrahoney2309"><img src="pictures/hackerrank-icon.png" alt="" class="hackerrank"></a>
                 </div>
             </div>
         </div>
@@ -202,11 +203,8 @@
                 <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i></button>
             </form>
         </div>
-    </section>
-    
+    </section>  
     <!-- js file-->
-    <script src="index.js"></script>
-    <!-- jQuery cdn-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>  
 </body>
 </html>
