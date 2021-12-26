@@ -177,7 +177,19 @@ header .navbar ul li a:hover {
 .home h3  {
    font-size: 2.5rem;
    color: #fff;
-   
+   padding: 1rem;
+}
+.home h1 {
+    font-size: 3rem;
+    color: #fff;
+    padding: .5rem;
+}
+.home span {
+    color: var(--yellow);
+}
+.home p {
+    font-size: 1.5rem;
+    color: #fff;
 }
 .home .box {
     padding: 0;
