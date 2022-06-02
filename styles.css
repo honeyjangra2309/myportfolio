@@ -187,7 +187,7 @@ header .navbar ul li a:hover {
         position: relative;
     }
     100% {
-        left: 50%;
+        left: 60%;
     }
 }
 .home h3  {
@@ -536,6 +536,15 @@ header .navbar ul li a:hover {
     }
     .about .row .counter .box {
         width: 90%;
+    }
+    @keyframes move {
+        0% {
+            left: -567px;
+            position: relative;
+        }
+        100% {
+            left: 150%;
+        }
     }
 }
 @media (max-width:380px) {
