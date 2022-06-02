@@ -36,15 +36,21 @@ body {
 section {
     min-height: 100vh;
     padding: 1rem;
+    animation: move 3s forwards ease-out 0.5s;
 }
 .user .wrapper {
     display: inline-flex;
     padding-top: 1rem;
 }
-
+.box a {
+    color: var(--yellow);
+}
 .user .wrapper .dynamic-txts {
   line-height: 30px;
   overflow:hidden;
+}
+#intro {
+    line-height: 1.6;
 }
 .user .wrapper .dynamic-txts li {
     list-style: none;
@@ -173,6 +179,16 @@ header .navbar ul li a:hover {
     justify-content: center;
     flex-flow: column;
     padding: 0 15rem;
+    animation: move 3s forwards ease-out 0.5s;
+}
+@keyframes move {
+    0% {
+        left: -567px;
+        position: relative;
+    }
+    100% {
+        left: 50%;
+    }
 }
 .home h3  {
    font-size: 2.5rem;
