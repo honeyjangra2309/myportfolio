@@ -1,9 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
 :root {
     --yellow:#f2aa4cff;
     --idkcolor:#f76c6c;
 }
 *{
-    font-family: Arial, Helvetica, verdana;
+    font-family: "Poppins";
     margin: 0; padding: 0;
     box-sizing: border-box;
     text-decoration: none;
@@ -32,6 +35,9 @@ body {
     background: #101820ff;
     overflow: hidden;
     padding-left: 35rem;
+}
+header {
+    overflow-y: scroll;
 }
 section {
     min-height: 100vh;
@@ -114,6 +120,7 @@ section {
 header {
     position: fixed;
     top: 0; left: 0;
+    padding-top: 50px;
     z-index: 1000;
     height: 100%;
     width: 35rem;
@@ -505,7 +512,38 @@ header .navbar ul li a:hover {
     padding-right: 1rem;
     color: var(--yellow);
 }
-
+#rect {
+    width: 50px;
+    height: 50px;
+    top: 100px;
+    right: 50px;
+}
+#rect2 {
+    width: 80px;
+    height: 80px;
+    bottom: 100px;
+    right: 70px;
+    
+}
+#rect3 {
+    width: 40px;
+    height: 40px;
+    bottom: 270px;
+    right: 200px;
+}
+#rect4 {
+    width: 60px;
+    height: 60px;
+    top: 150px;
+    right: 250px;
+}
+.rect {
+    z-index: 2;
+    background: var(--yellow);
+    border-radius: 10px;
+    transform: rotateZ(45deg);
+    position: absolute;
+}
 
 /* media queries */
 @media (max-width:1200px) {
