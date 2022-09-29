@@ -1,0 +1,603 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+:root {
+    --yellow:#f2aa4cff;
+    --idkcolor:#f76c6c;
+}
+*{
+    font-family: "Poppins";
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+::selection {
+    background: var(--yellow);
+}
+html
+{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+html::-webkit-scrollbar-track{
+    background: #222;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--yellow);
+}
+body {
+    background: #101820ff;
+    overflow: hidden;
+    padding-left: 35rem;
+}
+header {
+    overflow-y: scroll;
+}
+section {
+    min-height: 100vh;
+    padding: 1rem;
+    animation: move 3s forwards ease-out 0.5s;
+}
+.user .wrapper {
+    display: inline-flex;
+    padding-top: 1rem;
+}
+.box a {
+    color: var(--yellow);
+}
+.user .wrapper .dynamic-txts {
+  line-height: 30px;
+  overflow:hidden;
+}
+#intro {
+    line-height: 1.6;
+}
+.user .wrapper .dynamic-txts li {
+    list-style: none;
+    font-size: 3rem;
+    color: var(--yellow);
+    position: relative;
+    top: 0;
+}
+#result {
+    font-size: 2rem;
+    color: #eee;
+}
+.user .wrapper .dynamic-txts li span {
+    position: relative;
+}
+.user .wrapper .dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    background: #222;
+    border-left: 2px solid var(--yellow);
+    animation: typing 2s steps(9) infinite;
+}
+@keyframes typing {
+    100% 
+    {
+        left: 100%;
+        margin: 0 -2rem 0 2rem;
+   }
+}
+.btn {
+    padding: .7rem 3rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+.btn i {
+    padding: 0 .5rem;
+    font-size: 1.8rem;
+}
+.btn:hover {
+    background: var(--yellow);
+}
+.heading {
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: .1rem solid #fff4;
+    color: #fff;
+} 
+.heading span {
+    color: var(--yellow);
+}
+header {
+    position: fixed;
+    top: 0; left: 0;
+    padding-top: 50px;
+    z-index: 1000;
+    height: 100%;
+    width: 35rem;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+header .user img {
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: .5rem solid var(--yellow);
+}
+header .user .neonText {
+    color: #fff;
+    font-size: 3rem;
+    text-shadow: 
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+}
+header .user .post {
+    font-size: 2rem;
+    color: #eee;
+}
+header .navbar {
+    width: 100%;
+}
+header .navbar ul {
+    list-style: none;
+    padding: 1rem 3rem;
+}
+header .navbar ul li a {
+ display: block;
+ padding: 1rem;
+ margin: 1.5rem 0;
+ background: #333;
+ color: #fff;
+ font-size: 2rem;
+ border-radius: 5rem;
+}
+header .navbar ul li a:hover {
+    background: var(--yellow);
+}
+
+#menu {
+    position: fixed;
+    top: 2rem; right: 2rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+.home {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 15rem;
+    animation: move 3s forwards ease-out 0.5s;
+}
+@keyframes move {
+    0% {
+        left: -567px;
+        position: relative;
+    }
+    100% {
+        left: 60%;
+    }
+}
+.home h3  {
+   font-size: 2.5rem;
+   color: #fff;
+   padding: 1rem;
+}
+.home h1 {
+    font-size: 3rem;
+    color: #fff;
+    padding: .5rem;
+}
+.home span {
+    color: var(--yellow);
+}
+.home p {
+    font-size: 1.5rem;
+    color: #fff;
+}
+.home .box {
+    padding: 0;
+    display: flex;
+    margin: 7rem 0;
+    flex-flow: row;
+    border:  #448ee4;
+}
+
+.about .counter .box .codechef {
+    height: 48px;
+}
+.about .counter .box .codechef:hover {
+    height: 60px;
+}
+.home .box .codeforces {
+    padding-right: 4rem;
+}
+.home .box .codeforces:hover {
+    height: 70px;
+}
+.about .counter .box  .gfg {
+    height: 48px;
+}
+.about .counter .box  .gfg:hover {
+    height: 70px;
+}
+.home .box .github {
+    padding-right: 4rem;
+}
+.home .box i:hover {
+    height: 70px;
+}
+
+.education .box-container,.about .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 3rem;
+}
+.education .box-container .box {
+    width: 27rem;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid #fff;
+    position: relative;
+}
+.about .box-container .box {
+    width: 30rem;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid #fff;
+    position: relative;
+}
+.education .box-container .box span,.about .box-container .box span {
+    font-size: 1.3rem;
+    background: #222;
+    color: #fff;
+    border-radius: 5rem;
+    padding: .5rem 2.5rem;
+}
+.education .box-container .box span a {
+    margin-right: .3rem;
+}
+.education .box-container .box h3,.about .box-container .box h3 {
+    font-size: 2rem;
+    color: #fff;
+    padding-top: 1.5rem;
+}
+.education .box-container .box h4 {
+    font-size: 1.5rem;
+    color: #fff;
+    padding-top: 1.5rem;
+}
+.education .box-container .box p,.about .box-container .box p {
+    font-size: 1.4rem;
+    color: #eee;
+    padding: 1rem 0;
+}
+.education .box-container .box i,.about .box-container .box i {
+    position: absolute;
+    top: -1.5rem; left: -2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--yellow);
+}
+.projects .box-container .box #book {
+    position: absolute;
+    top: -1.2rem; left: -2.5rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--yellow);
+}
+.projects .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 2rem;
+}
+.projects .box-container .box {
+    width: 43rem;
+    margin: 3rem 2rem;
+    padding-left: 2rem;
+    border-left: .2rem solid #fff;
+    position: relative;
+}
+.projects .box .project1,.project2{
+    color: #fff;
+    font-size: 2rem; 
+    padding-left: 20px;
+}
+.projects .box .blockchain {
+    font-size: 1.5rem;
+    color: #eee;
+    letter-spacing: 1px;
+    font-style: italic;
+    padding-top: 1rem;
+}
+.projects .box .portfolio {
+    font-size: 1.5rem;
+    color: #eee;
+    letter-spacing: 1px;
+    font-style: italic;
+    padding-top: 2rem;
+}
+.skills .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 3rem;
+}
+.skills .box-container .box{
+    width: 45rem;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid #fff;
+    position: relative;
+}
+
+.skills h1 {
+   font-size: 5rem;
+   color: #fff;
+}
+.skills .box-container .box .container {
+    background-color: #333;
+    width: 80%;
+    border-radius: 5rem;
+    font-size: 19px;
+    margin-bottom:20px;
+}
+.skills .container .html {
+    width: 0;
+    opacity: 0;
+    background: var(--yellow);
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease;
+}
+.skills .container .css {
+    width: 0;
+    opacity: 0;
+    background: var(--yellow);
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease;
+}
+.skills .container .javascript {
+    width: 0;
+    opacity: 0;
+    background: var(--yellow);
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease;
+}
+.skills .container .c {
+    width: 0;
+    opacity: 0;
+    background: var(--yellow);
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease;
+}
+.skills .container .nodejs {
+    width: 0;
+    opacity: 0;
+    background: var(--yellow);
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease;
+}
+.skills .container .bootstrap {
+    width: 0;
+    opacity: 0;
+    background: var(--yellow);
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease;
+}
+.skills .container .reactjs {
+    width: 0;
+    opacity: 0;
+    background: var(--yellow);
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease;
+}
+.skills .container .mysql {
+    width: 0;
+    opacity: 0;
+    background: var(--yellow);
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease;
+}
+.contacts .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contacts .row .content {
+    flex: 1 1 30rem;
+    padding: 4rem;
+    padding-bottom: 0;
+}
+.contacts .row form {
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+.contacts .row form .box {
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background: #3333;
+    color: #fff;
+    text-transform: none;
+    font-size: 1.7rem;
+    width: 100%;
+    border: 1px solid var(--yellow);
+    border-radius: 1.5rem;
+}
+.contacts .row form .box::placeholder {
+  text-transform: capitalize;
+}
+.contacts .row .form .message {
+    height: 15rem;
+    resize: none;
+}
+.contacts .row .content .title {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+.contacts .row .content .info h3{
+   display: flex;
+   align-items: center;
+    font-size: 2rem;
+   color: #eee;
+   padding: 1rem 0;
+   font-weight: normal;
+}
+.contacts .row .content .info h3 i{
+    padding-right: 1rem;
+    color: var(--yellow);
+}
+#rect {
+    width: 50px;
+    height: 50px;
+    top: 100px;
+    right: 50px;
+}
+#rect2 {
+    width: 80px;
+    height: 80px;
+    bottom: 100px;
+    right: 70px;
+    
+}
+#rect3 {
+    width: 40px;
+    height: 40px;
+    bottom: 270px;
+    right: 200px;
+}
+#rect4 {
+    width: 60px;
+    height: 60px;
+    top: 150px;
+    right: 250px;
+}
+.rect {
+    z-index: 2;
+    background: var(--yellow);
+    border-radius: 10px;
+    transform: rotateZ(45deg);
+    position: absolute;
+}
+
+/* media queries */
+@media (max-width:1200px) {
+   html {
+       font-size: 55%;
+   }
+   .home {
+       padding: 1rem 4rem;
+   }
+}
+@media (max-width:991px) {
+    header {
+        left: -120%;
+    }
+    #menu {
+        display: block;
+    }
+    header.toggle {
+        left: 0%;
+    }
+    body {
+        padding: 0;
+    }
+}
+@media (max-width:768px) {
+    html {
+        font-size: 50%;
+    }
+    .about .row .counter .box {
+        width: 90%;
+    }
+    @keyframes move {
+        0% {
+            left: -567px;
+            position: relative;
+        }
+        100% {
+            left: 150%;
+        }
+    }
+}
+@media (max-width:380px) {
+    header {
+        width: 100vw;
+    }
+    .heading {
+        margin: 0 3rem;
+    }
+    .about .row .counter .box {
+        width: 90%;
+    }
+
+    .education .box-container .box{
+        width: 100%;
+    }
+ }
+
