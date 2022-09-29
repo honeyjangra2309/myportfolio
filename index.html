@@ -12,7 +12,7 @@
      <!-- jQuery cdn-->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
-<body>
+<body onload="getVisitors()">
     <header>
         <div class="user">
             <img src="pictures/profile_main.jpg" alt="">
@@ -47,6 +47,10 @@
            <a href="https://www.linkedin.com/in/hanny-jangra-6679311b5/"><i class="fab fa-linkedIn" style="font-size: 48px;"></i></a>
          </div>
          <div id="result"></div>
+         <div id="rect" class="rect"></div>
+         <div id="rect2" class="rect"></div>
+         <div id="rect3" class="rect"></div>
+         <div id="rect4" class="rect"></div>
     </section>
     <section class="about" id="about">
         <h1 class="heading"><span>My</span> Experience</h1>
@@ -58,8 +62,9 @@
                  <p>Developed 5 fun theme based daily games for <a href="https://pods.page/">Pods App</a>(55k+ users) that increased daily users count by 1.5 times.</p>
                  <p>Developed an internal mass data upload system to firebase using firebase batch system that saved hours of extra work.</p>
                  <p>worked on various famous javascript libraries like p5.js and phaser.js</p>
-                 <p style="float: right;">SEP 2021-Present</p>
+                 <p style="float: right;">SEP 2021-AUG 2022</p>
              </div>
+            
          </div>
     </section>
     <section class="education" id="education">
@@ -70,7 +75,7 @@
                <span>2019-2023</span>
                <h3>B.Tech in Information Technology</h3>
                <h3>from IIIT Sonepat</h3>
-               <p>I've completed 5 semesters with an average CGPA of 8.70.</p>
+               <p>I've completed 6 semesters with an average CGPA of 8.72.</p>
            </div>
            <div class="box">
             <i class="fas fa-user-graduate"></i>
@@ -131,23 +136,30 @@
          <div class="box">
              <i class="fas fa-book" id="book"></i>
             <h3 class="project2">Tinder Clone(Desktop view)</h3>
-            <p class="portfolio">This is a frontend clone of one of most popular dating site tinder Developed using react.js and react-router-dom.
+            <p class="portfolio"> TinderClone is a UI clone of one of most famous dating site tinder created with ReactJS,React
+                hooks,React router and props.
+                Download,login dialog and support pages are designed along side main page for desktop view only.Click on the Github Icon
+                 to see live deployment.
             </p>
             <img src="pictures/reactjs.png" alt="" style="height: 48px; float: right; padding-top: 1rem;">
             <img src="pictures/javascript.png" alt="" style="height: 48px; float: right; padding-top: 1rem;">
             <img src="pictures/materialui.png" alt="" style="height: 60px; float: right; padding: 1rem;">
-            <a href="https://github.com/honeyjangra2309/React-TinderClone"><i class="fab fa-github" style="font-size: 36px; float: left; padding-top: 1rem;"></i></a>
+            <a href="https://react-tinder-clone.vercel.app/"><i class="fab fa-github" style="font-size: 36px; float: left; padding-top: 1rem;"></i></a>
         </div>
         <div class="box">
             <i class="fas fa-book" id="book"></i>
-            <h3 class="project2">Social Media Clones</h3>
-            <p class="portfolio">A google authenticated whatsApp-clone and facebook-clone. for live experience click on whatsApp symbol.
+            <h3 class="project2">Twitter Clone</h3>
+            <p class="portfolio">  Twitter Clone is clone of twitter developed using reactJS,bootstrap and firebase where you can tweet
+                your views with text.
+                you can upload image from your local disk(Gallery) and watch that tweet in realtime. Like feature is also
+                implemented.
+                Twitter SignIn UI page is also designed. Click on the Twitter Icon to see live deployment
             </p>
             <img src="pictures/reactjs.png" alt="" style="height: 48px; float: right; padding-top: 1rem;">
             <img src="pictures/firebase.png" alt="" style="height: 60px; float: right; padding: 1rem;">
             <img src="pictures/materialui.png" alt="" style="height: 60px; float: right; padding: 1rem;">
-            <a href="https://facebook-clone-c24b3.web.app/"><i class="fab fa-facebook-f" style="font-size: 36px; float: left; padding-top: 1rem;"></i></a>
-           <a href="https://whatsapp-clone-be91f.web.app/"><i class="fab fa-whatsapp" aria-hidden="true" style="font-size: 36px; float: left; padding-top: 1rem;"></i></a>
+            <a href="https://twitter-clone-93f92.web.app/"><i class="fab fa-twitter" aria-hidden="true" style="font-size: 36px; float: left; padding-top: 1rem;"></i></a>
+          
         </div>
         </div>
     </section>
@@ -206,19 +218,14 @@
             <form action="">
                 <input type="text" placeholder="name" class="box">
                 <input type="emial" placeholder="email" class="box">
-                <input type="text" placeholder="project" class="box">
+                
                 <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
                 <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i></button>
             </form>
         </div>
     </section>  
-    <!-- js file-->
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-   <script src="https://www.gstatic.com/firebasejs/9.6.4/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-   <script src="https://www.gstatic.com/firebasejs/9.6.4/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-firestore.js"></script>
     <script src="index.js"></script>  
     <script src="firebase.js"></script>
 </body>
