@@ -20,7 +20,7 @@ html
     overflow-x: hidden;
 }
 html::-webkit-scrollbar{
-    width: 1.4rem;
+    width: 1rem;
 }
 html::-webkit-scrollbar-track{
     background: #222;
@@ -36,15 +36,21 @@ body {
 section {
     min-height: 100vh;
     padding: 1rem;
+    animation: move 3s forwards ease-out 0.5s;
 }
 .user .wrapper {
     display: inline-flex;
     padding-top: 1rem;
 }
-
+.box a {
+    color: var(--yellow);
+}
 .user .wrapper .dynamic-txts {
   line-height: 30px;
   overflow:hidden;
+}
+#intro {
+    line-height: 1.6;
 }
 .user .wrapper .dynamic-txts li {
     list-style: none;
@@ -53,7 +59,10 @@ section {
     position: relative;
     top: 0;
 }
-
+#result {
+    font-size: 2rem;
+    color: #eee;
+}
 .user .wrapper .dynamic-txts li span {
     position: relative;
 }
@@ -170,11 +179,33 @@ header .navbar ul li a:hover {
     justify-content: center;
     flex-flow: column;
     padding: 0 15rem;
+    animation: move 3s forwards ease-out 0.5s;
+}
+@keyframes move {
+    0% {
+        left: -567px;
+        position: relative;
+    }
+    100% {
+        left: 60%;
+    }
 }
 .home h3  {
    font-size: 2.5rem;
    color: #fff;
-   
+   padding: 1rem;
+}
+.home h1 {
+    font-size: 3rem;
+    color: #fff;
+    padding: .5rem;
+}
+.home span {
+    color: var(--yellow);
+}
+.home p {
+    font-size: 1.5rem;
+    color: #fff;
 }
 .home .box {
     padding: 0;
@@ -208,84 +239,8 @@ header .navbar ul li a:hover {
 .home .box i:hover {
     height: 70px;
 }
-.about .counter .box  .hackerrank {
-    height: 48px;
-}
-.about .counter .box  .hackerrank:hover {
-    height: 70px;
-}
-.home h1 {
-    font-size: 5rem;
-    color: #fff;
-}
-.home h1 span {
-    color: var(--yellow);
-}
-.wave {
-    animation: wave-animation 2.5s   infinite;
-    display: inline-block;
-}
-@keyframes wave-animation {
-    0% {transform: rotate(0.0deg);}
-    10% {transform: rotate(14.0deg);}
-    20% {transform: rotate(-8.0deg);}
-    30% {transform: rotate(14.0deg);}
-    40% {transform: rotate(-4.0deg);}
-    50% {transform: rotate(10.0deg);}
-    60% {transform: rotate(0.0deg);}
-    100% {transform: rotate(0.0deg);}
-}
-.home p {
-    font-size: 2rem;
-    color: #eee;
-    padding: 1rem 0;
-}
-.about .row {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-wrap: wrap;
-   padding: 1rem 0;
-}
-.about .row .info {
-    flex: 1 1 48rem;
-    padding: 2rem 1rem;
-    padding-left: 6rem;
-}
-.about .row .info h3 {
-    font-size: 2rem;
-    color: var(--yellow);
-    padding: 1rem 0;
-    font-weight: normal;
-}
-.about .row .info h3 span {
-    color: #eee;
-    padding: 0 .5rem;
-}
-.about .row .counter {
-    flex: 1 1 48rem;
-    align-items: center;
-   justify-content: center;
-   flex-wrap: wrap;
-}
-.about .row .counter .box {
-    width:20rem;
-    background: #222;
-    text-align: center;
-    padding: 2rem;
-    margin: 2rem;
-    border-radius: 1rem;
-    box-shadow: inset 0 0 10px #fff;
-}
-.about .row .counter .box span {
-    font-size: 3.2rem;
-    color: var(--yellow);
-}
-.about .row .counter .box h3 {
-    font-size: 1.7rem;
-    color: #fff;
-}
-.education .box-container {
+
+.education .box-container,.about .box-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -300,24 +255,39 @@ header .navbar ul li a:hover {
     border-left: .2rem solid #fff;
     position: relative;
 }
-.education .box-container .box span {
+.about .box-container .box {
+    width: 30rem;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid #fff;
+    position: relative;
+}
+.education .box-container .box span,.about .box-container .box span {
     font-size: 1.3rem;
     background: #222;
     color: #fff;
     border-radius: 5rem;
     padding: .5rem 2.5rem;
 }
-.education .box-container .box h3 {
+.education .box-container .box span a {
+    margin-right: .3rem;
+}
+.education .box-container .box h3,.about .box-container .box h3 {
     font-size: 2rem;
     color: #fff;
     padding-top: 1.5rem;
 }
-.education .box-container .box p {
+.education .box-container .box h4 {
+    font-size: 1.5rem;
+    color: #fff;
+    padding-top: 1.5rem;
+}
+.education .box-container .box p,.about .box-container .box p {
     font-size: 1.4rem;
     color: #eee;
     padding: 1rem 0;
 }
-.education .box-container .box i {
+.education .box-container .box i,.about .box-container .box i {
     position: absolute;
     top: -1.5rem; left: -2.5rem;
     height: 5rem;
@@ -566,6 +536,15 @@ header .navbar ul li a:hover {
     }
     .about .row .counter .box {
         width: 90%;
+    }
+    @keyframes move {
+        0% {
+            left: -567px;
+            position: relative;
+        }
+        100% {
+            left: 150%;
+        }
     }
 }
 @media (max-width:380px) {
