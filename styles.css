@@ -584,6 +584,9 @@ header .navbar ul li a:hover {
             left: 150%;
         }
     }
+    #rect,#rect2,#rect3,#rect4 {
+        display: none;
+    }
 }
 @media (max-width:380px) {
     header {
