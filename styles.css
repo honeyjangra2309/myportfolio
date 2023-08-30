@@ -544,6 +544,9 @@ header .navbar ul li a:hover {
     transform: rotateZ(45deg);
     position: absolute;
 }
+.rect:hover {
+    transform: rotate(180deg);
+}
 
 /* media queries */
 @media (max-width:1200px) {
